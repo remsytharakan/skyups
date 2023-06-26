@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #00ABB3;
+    --primary: #B78D65;
     --light: #F8F8F8;
     --dark: #252525;
 }
@@ -91,7 +91,7 @@ h6,
 
 .btn-outline-body {
     color: var(--primary);
-    border-color: #3F4E4F;
+    border-color: #777777;
 }
 
 .btn-outline-body:hover {
@@ -170,23 +170,23 @@ h6,
     left: 0;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .5);
 }
 
 @media (max-width: 768px) {
-    .header-carousel  {
+    .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
     }
 
-    .header-carousel  img {
+    .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    .header-carousel  p {
+    .header-carousel .owl-carousel-item p {
         font-size: 16px !important;
     }
 }
@@ -228,7 +228,7 @@ h6,
 }
 
 .header-carousel .owl-dots .owl-dot.active img {
-    opacity: 0.1;
+    opacity: 1;
 }
 
 .page-header {
@@ -251,10 +251,6 @@ h6,
 
 
 /*** Facts ***/
-.fact-item
-{
-    background: #cfd6d7; 
-}
 .fact-item .fact-icon {
     width: 120px;
     height: 120px;
@@ -269,7 +265,7 @@ h6,
 }
 
 .fact-item:hover .fact-icon {
-    background: #cfd6d7;
+    background: var(--dark);
 }
 
 .fact-item .fact-icon i {
@@ -300,7 +296,7 @@ h6,
 
 .about-img img:last-child,
 .feature-img img:last-child {
-    margin: 10% 0 0 30%;
+    margin: 20% 0 0 40%;
 }
 
 .about-img::before,
@@ -331,7 +327,7 @@ h6,
 }
 
 .service-item:hover .service-text {
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .7);
 }
 
 .service-item * {
@@ -517,7 +513,7 @@ h6,
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #3F4E4F;
+    color: #777777;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -539,7 +535,7 @@ h6,
 }
 
 .footer .form-control {
-    border-color: #3F4E4F;
+    border-color: #777777;
 }
 
 .footer .copyright {
