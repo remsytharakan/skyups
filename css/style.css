@@ -370,6 +370,46 @@ h6,
 }
 
 
+
+/*** TeamService ***/
+.teamservice-items {
+    margin: -.75rem;
+}
+
+.teamservice-item {
+    padding: .75rem;
+    
+}
+
+.teamservice-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    transition: .5s;
+    z-index: -1;
+}
+
+.teamservice-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity to make it darker */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .teamservice-item:hover::before {
+    opacity: 1;
+  }
+  
+
 /*** Team ***/
 .team-items {
     margin: -.75rem;
@@ -551,3 +591,4 @@ h6,
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
